@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #cac9c963;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.price_name{
+    color: #000;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(245, 244, 244);
+}
+
+p{
+    color: rgb(105, 86, 32);
+}
+
+.header{
+    background: rgb(104, 197, 209); 
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+p{
+    font-size: 18px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 50px 0;
+    height: 470px;
+}
+
+.btn-main{
+    display: inline-block;
+    background: #210583;
+    color: rgb(255, 255, 255);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn-main:hover{
+    background-color: #170653;
+
+}
+
+.small-container{
+    max-width: 100%;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.small-container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.col-4{
+    flex-basis: 50%;
+    padding: 20px;
+    max-width: 220px;
+    margin-bottom: 80px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 140%;
+    height: 365px;
+}
+
+.title{
+    color: rgb(41, 36, 36);
+    position: relative;
+    line-height: 60px;
+}
+
+.box-container {
+    height: 340px;
+    box-shadow: 0 8px 6px -6px rgba(104, 99, 99, 0.712);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+ /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+.title::after{
+    content: '';
+    background: #210583;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    
+    color: #555;
+    font-weight: normal;
+}
+
+h6{
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    font-size: 2.2rem  
+}
+
+h7{
+    -webkit-text-fill-color: #fff;
+    font-weight: bold;
+    font-size: 2.2rem;
+   
+}
+
+.col-4 p{
+    font-size: 16px;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+ 
+.box-container .image-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0.4s;
+    -moz-transition: all 0.4s ease-in-out 0.4s;
+    transition: all 0.4s ease-in-out 0.4s;
+}
+
+.box-container:hover .image-overlay{
+    opacity: 1;
+}
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+   
+  .box-container:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+   
+  .content-details h3{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+  }
+   
+  .content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+   
+  .fadeIn-bottom{
+    top: 80%;
+  }
+   
+  .fadeIn-top{
+    top: 20%;
+  }
+   
+  .fadeIn-left{
+    left: 20%;
+  }
+   
+  .fadeIn-right{
+    left: 80%;
+  }
+
+/* --------Footer--------- */
+
+.footer{
+    background: rgb(104, 197, 209); 
+    color: #8a8a8a;
+    font-size: 18px;
+    padding: 60px 0 20px;
+}
+
+.copyright{
+    text-align: right;
+}
+
+/* ------------ media query for menu -------------------- */
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: maxHeight 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+}
